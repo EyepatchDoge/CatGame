@@ -1,0 +1,2 @@
+D:\GitHub\CatGame\JerryCat_Proj\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+D:\GitHub\CatGame\JerryCat_Proj\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
