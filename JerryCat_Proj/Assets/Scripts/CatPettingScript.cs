@@ -14,7 +14,14 @@ public class CatPettingScript : MonoBehaviour
     public int score;
     public int maxScore;
 
+    public InputHandler inputHandler;
+
     #endregion
+    private void OnEnable()
+    {
+        inputHandler.OnClickAction += IncreaseScore;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,5 +46,11 @@ public class CatPettingScript : MonoBehaviour
             score++;
             scoreTxt.text = score.ToString();
         }
+    }
+
+    private void OnDisable()
+    {
+        inputHandler.OnClickAction -= IncreaseScore;
+
     }
 }
