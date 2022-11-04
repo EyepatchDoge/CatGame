@@ -29,19 +29,19 @@ public class Raycaster : MonoBehaviour
     {
         Debug.Log(inputHandler.TouchPosition);
 
-        Ray ray = cam.ScreenPointToRay(inputHandler.TouchPosition);
 
-        RaycastHit hit;
+        var pointInWorld = cam.ScreenToWorldPoint(inputHandler.TouchPosition);
 
-        if (Physics.Raycast(ray, out hit))
+        RaycastHit2D hit = Physics2D.Raycast(pointInWorld, Vector2.zero);
+        if(hit.collider != null)
         {
-
             if (hit.collider.CompareTag(targetTag))
             {
                 Debug.Log("target hit!");
                 hit.collider.GetComponent<CatPettingScript>().IncreaseScore();
             }
         }
+
     }
 
 }
