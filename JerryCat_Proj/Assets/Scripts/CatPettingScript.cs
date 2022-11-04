@@ -9,18 +9,11 @@ public class CatPettingScript : MonoBehaviour
     #region Variables 
     public Text scoreTxt;
     public Text DescriptionTxt;
-    public CircleCollider2D catSprite;
 
     public int score;
     public int maxScore;
 
-    public InputHandler inputHandler;
-
     #endregion
-    private void OnEnable()
-    {
-        inputHandler.OnClickAction += IncreaseScore;
-    }
 
     // Start is called before the first frame update
     void Start()
@@ -41,16 +34,17 @@ public class CatPettingScript : MonoBehaviour
 
     public void IncreaseScore()
     {
-        if (score != maxScore)
+
+        if (score < maxScore)
         {
             score++;
+
+            Debug.Log("The score is " + score);
+
             scoreTxt.text = score.ToString();
+
+            TamedCat();
         }
-    }
 
-    private void OnDisable()
-    {
-        inputHandler.OnClickAction -= IncreaseScore;
-
-    }
+    } 
 }
