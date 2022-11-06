@@ -20,7 +20,7 @@ MonoBehaviour:
     score: 1
   - catPart: 2
     score: -1
-  catStates:
-  - {fileID: -8731579659179131352, guid: 9eca11d758de9294295c9bf11d0debdd, type: 3}
-  - {fileID: 7228881338296057996, guid: 9eca11d758de9294295c9bf11d0debdd, type: 3}
-  - {fileID: 1568535785916322633, guid: 9eca11d758de9294295c9bf11d0debdd, type: 3}
+  happySprite: {fileID: 7237890493632380373, guid: 9eca11d758de9294295c9bf11d0debdd, type: 3}
+  neutralSprite: {fileID: -8731579659179131352, guid: 9eca11d758de9294295c9bf11d0debdd, type: 3}
+  sadSprite: {fileID: 1568535785916322633, guid: 9eca11d758de9294295c9bf11d0debdd, type: 3}
+  catTotalPoints: 10

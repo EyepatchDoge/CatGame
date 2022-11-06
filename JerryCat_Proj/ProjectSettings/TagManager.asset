@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - yes
+  - head
+  - paws
+  - tail
+  - cat
   layers:
   - Default
   - TransparentFX

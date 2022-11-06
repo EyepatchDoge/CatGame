@@ -13,7 +13,12 @@ public class CatSO : ScriptableObject
 {
     public string catName;
     public List<PartData> catPartData = new List<PartData>();
-    public List<Sprite> catStates;
+
+    public Sprite happySprite;
+    public Sprite neutralSprite;
+    public Sprite sadSprite;
+
+    public int catTotalPoints;
 }
 
 [System.Serializable]
@@ -22,3 +27,4 @@ public struct PartData
     public CatParts catPart;
     public int score;
 }
+
